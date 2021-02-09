@@ -1,6 +1,7 @@
 while (true) {
-    if (input.acceleration(Dimension.X + Dimension.Y + Dimension.Z) > 10) {
-        light.setAll(color.rgb(255, 255, 0))
+    console.log(input.acceleration(Dimension.X))
+    if (input.acceleration(Dimension.X) > 50) {
+        light.setAll(color.rgb(255, 0, 255))
     } else {
         light.clear()
     }
